@@ -18,11 +18,11 @@ const popUp = document.querySelector('.pop-up');
 const popUpRefresh = document.querySelector('.pop-up__refresh');
 const popUpText = document.querySelector('.pop-up__message');
 
-const carrotSound = new Audio('./sound/carrot_pull.mp3');
-const alertSound = new Audio('./sound/alert.wav');
-const bgSound = new Audio('./sound/bg.mp3');
-const bugSound = new Audio('./sound/bug_pull.mp3');
-const winSound = new Audio('./sound/game_win.mp3');
+const carrotSound = new Audio('../sound/carrot_pull.mp3');
+const alertSound = new Audio('../sound/alert.wav');
+const bgSound = new Audio('../sound/bg.mp3');
+const bugSound = new Audio('../sound/bug_pull.mp3');
+const winSound = new Audio('../sound/game_win.mp3');
 
 
 let started = false;
@@ -128,8 +128,8 @@ function initGame () {
   field.innerHTML = '';
   gameScore.innerText = CARROT_COUNT;// 당근의 갯수 설정
   // 벌레와 당근을 생성한뒤 field에 추가해줌
-  addItem('carrot', CARROT_COUNT, './img/carrot.png');
-  addItem('bug', BUG_COUNT, './img/bug.png');
+  addItem('carrot', CARROT_COUNT, '../img/carrot.png');
+  addItem('bug', BUG_COUNT, '../img/bug.png');
 }
 
 function onFieldClick(event) {
